@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('hello', function () {
+    $name = 'Jack';
+    $tasks = [
+        'add task',
+        'find task',
+        'review task',
+    ];
+    return view('hello', compact('tasks'), compact('name')
+    );
+});
