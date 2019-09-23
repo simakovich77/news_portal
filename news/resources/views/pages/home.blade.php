@@ -50,6 +50,12 @@
 </head>
 <body>
 
+@foreach ($tasks as $task)
+    <li>
+        {{$task->body}}
+    </li>
+    @endforeach
+
 <!-- LOADER -->
 <div id="preloader">
     <img class="preloader" src="images/loader.gif" alt="">

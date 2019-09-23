@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('pages.home');
+    $news = DB:table('')->get();
+    return view('pages.home', compact('tasks'));
 });
 
 Route::get('hello', function () {
