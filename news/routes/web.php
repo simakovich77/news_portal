@@ -12,17 +12,18 @@
 */
 
 Route::get('/', function () {
-    $news = DB:table('')->get();
-    return view('pages.home', compact('tasks'));
+    //$news = DB::table('news')->get();
+    $news = App\news::GetAllNews();
+    return view('pages.home', compact('news'));
 });
 
-Route::get('hello', function () {
-    $name = 'Jack';
-    $tasks = [
-        'add task',
-        'find task',
-        'review task',
-    ];
-    return view('hello', compact('tasks'), compact('name')
-    );
-});
+//Route::get('hello', function () {
+//    $name = 'Jack';
+//    $tasks = [
+//        'add task',
+//        'find task',
+//        'review task',
+//    ];
+//    return view('hello', compact('tasks'), compact('name')
+//    );
+//});

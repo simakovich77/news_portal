@@ -50,9 +50,9 @@
 </head>
 <body>
 
-@foreach ($tasks as $task)
+@foreach ($news as $new)
     <li>
-        {{$task->body}}
+        {{$new->body}}
     </li>
     @endforeach
 
