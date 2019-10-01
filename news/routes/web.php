@@ -11,11 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    //$news = DB::table('news')->get();
-    $news = App\news::GetAllNews();
-    return view('pages.home', compact('news'));
-});
+Route::get('/', 'NewsController@index');
+
+
+//Route::get('/', function () {
+//    //$news = DB::table('news')->get();
+//    $news = App\news::GetAllNews();
+//    return view('pages.home', compact('news'));
+//});
 
 //Route::get('hello', function () {
 //    $name = 'Jack';
