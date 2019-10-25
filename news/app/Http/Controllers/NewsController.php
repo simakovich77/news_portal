@@ -8,6 +8,7 @@ class NewsController extends Controller
 {
     //
     function index() {
+        echo '1';
         $news = App\news::GetAllNews();
         return view('pages.home', compact('news'));
     }
