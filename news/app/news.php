@@ -15,9 +15,9 @@ class news extends Model
         $lastnews = DB::table('news')
             ->latest()
             ->limit(3)
-            ->first();
+            ->get();
         return $lastnews;
 //        $a = static::all();
-//        return static::all();
+        //return static::all();
     }
 }

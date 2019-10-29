@@ -504,7 +504,19 @@
     <section class="section first-section">
         <div class="container-fluid">
             <div class="masonry-blog clearfix">
+                <?php //var_dump($news); ?>
+
+                <?php //$i=1;?>
                 @foreach ($news as $nnews)
+
+<!--                    --><?php
+//                            print('i = ');
+//                            print($i);
+//                            print('<br>');
+//
+//
+//                    print('<br>');
+                    ?>
 {{--                    <li>--}}
 {{--                        {{$new->body}}--}}
 {{--                    </li>--}}
@@ -526,6 +538,8 @@
                          </div><!-- end shadow -->
                      </div><!-- end post-media -->
                  </div><!-- end left-side -->
+
+                    <?php //$i++;?>
                 @endforeach
          </div>
      </section>
