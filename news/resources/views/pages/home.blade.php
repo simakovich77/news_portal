@@ -508,21 +508,6 @@
 
                 <?php //$i=1;?>
                 @foreach ($news as $nnews)
-
-<!--                    --><?php
-//                            print('i = ');
-//                            print($i);
-//                            print('<br>');
-//
-//
-//                    print('<br>');
-                    ?>
-{{--                    <li>--}}
-{{--                        {{$new->body}}--}}
-{{--                    </li>--}}
-{{--                    @endforeach--}}
-
-{{--                    {{$news[$i]}}--}}
                  <div class="right-side">
                      <div class="masonry-box post-media">
                          <img src="/upload/blog_masonry_01.jpg" alt="" class="img-fluid">
@@ -538,8 +523,6 @@
                          </div><!-- end shadow -->
                      </div><!-- end post-media -->
                  </div><!-- end left-side -->
-
-                    <?php //$i++;?>
                 @endforeach
          </div>
      </section>
