@@ -11,13 +11,13 @@ class news extends Model
     //
     public static function getAllNews() {
 
+        //return $this->belongsTo('App\User');
 
-        $lastnews = DB::table('news')
-            ->latest()
-            ->limit(3)
-            ->get();
-        return $lastnews;
-//        $a = static::all();
-        //return static::all();
+//        $lastnews = DB::table('news')
+//            ->latest()
+//            ->limit(3)
+//            ->get();
+//        return $lastnews;
+        return static::all();
     }
 }
