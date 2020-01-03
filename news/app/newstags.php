@@ -3,13 +3,11 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\DB;
 
-
-class news extends Model
+class newstags extends Model
 {
     //
-    public function newsandtags() {
+    public static function getAllTags() {
 
         //return $this->belongsTo('App\User');
 
@@ -18,8 +16,6 @@ class news extends Model
 //            ->limit(3)
 //            ->get();
 //        return $lastnews;
-        //return static::all();
-       // return $this->hasMany('App\newsandtags', 'news_id');
-        return $this->belongsTo('App\newsandtags', 'news_id');
+        return static::all();
     }
 }

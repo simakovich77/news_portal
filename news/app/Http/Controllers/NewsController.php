@@ -8,17 +8,23 @@ class NewsController extends Controller
 {
     //
     function index() {
-//        $news = App\news::GetAllNews();
+        //$newsobj = new App\news;
+
+        $news = App\newsandtags::get();
 //        print("<pre>");
 //        print_r($news);
 //        print("</pre>");
 
 
-        $news_tags_temp = App\news_tags_temp::getAllTags();
-        print("<pre>");
-        print_r($news_tags_temp);
-        print("</pre>");
+//        $news_tags = App\news_tags::getAllTags();
+//        print("<pre>");
+//        print_r($news_tags);
+//        print("</pre>");
 
+        //$newstemp = new App\newsandtags;
+        print("<pre>");
+       print_r($news);
+        print("</pre>");
 
 
 
